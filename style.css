@@ -13,7 +13,7 @@ section{
 .private{
     width: 100%;
     max-width: 395px;
-    margin: 0px;
+    /* margin: 0px; */
     margin-top: 30px;
     margin-left: 1px;
 }
