@@ -1,0 +1,154 @@
+*{
+    text-decoration: none;
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    max-width:800px ;
+    margin: 0 auto;
+}
+.private{
+    width: 100%;
+    max-width: 395px;
+}
+section .private{
+    width: 100%;
+    max-width: 800px;
+}
+section .form{
+    width: 100%;
+    max-width: 800px;
+}
+form{
+    padding-top: 20px;
+}
+form .checkbox{
+    display: flex;
+    color: black;
+}
+form .checkbox p{
+    width: 100%;
+    max-width: 395px;
+    text-align: start;  
+}
+.info{
+    text-align: center;
+}
+.contact{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 50px;
+    padding-top: 60px;
+}
+.location iframe{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1600px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+.contact .input-box{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+}
+.input-box span{
+    line-height: 40px;
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+}
+.contact .form input{
+    outline: none;
+    height: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 8px 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: black;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border:none;   
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+textarea{
+    text-transform: capitalize;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    background-color: hsla(141, 32%, 86%, 0.906);
+}
+.input-1 .submit button{
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+    color: white;
+    background-color: #23cf5f;
+    border-color: #23cf5f;
+}
+.input-1 .submit button:hover{
+    background-color: #06a03c;
+}
+.foot{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 50px 0;
+}
+@media screen and (max-width:1061px){
+    .contact {
+        grid-template-columns: auto ;
+        gap: 50px;
+        padding:0px 20px ;
+    }
+}
+@media screen and (max-width:450px){
+    .contact {
+        grid-template-columns: auto ;
+        gap: 20px;
+        width: 100%;
+        max-width: 390px;
+    }
+    .location iframe{
+        width: 350px;
+        max-width: 390px;
+        height: 200px;
+        padding-left: 25px;
+    }
+    textarea{
+        width:100%;
+        height: 100px;
+    }
+    .input-1 .submit {
+        margin-left:130px;
+    }
+    .contact .input-box{
+        width: 100%;
+        max-width: 350px;
+    }
+    .contact .private{
+        width: 100%;
+        max-width: 400px;
+    }
+    .contact .form{
+        width: 100%;
+        max-width: 400px;
+    }
+}
