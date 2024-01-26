@@ -1,10 +1,9 @@
 *{
     text-decoration: none;
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 section{
     width: 100%;
     max-width:800px ;
@@ -13,14 +12,14 @@ section{
 .private{
     width: 100%;
     max-width: 395px;
+    margin: 30px;
 }
-section .private{
-    width: 100%;
-    max-width: 800px;
+.private h1{
+    text-align: center;
+    margin-bottom: 5px;
 }
-section .form{
-    width: 100%;
-    max-width: 800px;
+.private p{
+    padding: 20px 10px;
 }
 form{
     padding-top: 20px;
@@ -32,7 +31,9 @@ form .checkbox{
 form .checkbox p{
     width: 100%;
     max-width: 395px;
-    text-align: start;  
+    padding-top: 12px;
+    padding-left: 10px;
+    margin-bottom: 30px;
 }
 .info{
     text-align: center;
