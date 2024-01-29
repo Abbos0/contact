@@ -1,10 +1,5 @@
 
-
-
-
-
-// ============================ Contact===============================
-
+// ===================================Contact===============================
 const Username = document.querySelector("#username")
 const Email = document.querySelector("#email")
 const Call = document.querySelector("#call")
@@ -12,6 +7,23 @@ const Calculate = document.querySelector("#calculate")
 const Messagetext = document.querySelector("#messagetext")
 const Checkbox = document.querySelector("#checkbox")
 const Form = document.querySelector("#form")
+const Text = document.querySelector(".sec-text");
+const textLoad = () => {
+    setTimeout(() =>{
+        Text.textContent = "Trust";
+    }  , 0)
+    setTimeout(() =>{
+        Text.textContent = "Consultancy";
+    }  , 4000)
+    setTimeout(() =>{
+        Text.textContent = "& Trading";
+    }  , 8000)
+    setTimeout(() =>{
+        Text.textContent = " Boss ";
+    }  , 12000)
+}
+    textLoad();
+    setInterval(textLoad, 16000);
 
 const GetValue = (event) =>{
     event.preventDefault()
@@ -20,18 +32,10 @@ const GetValue = (event) =>{
 const SendMessage = (e) =>{
     e.preventDefault()
     text = `%0A 👦 Username: ${Username.value}  %0A 📩Email:  ${Email.value} %0A 📞 Phone: ${Call.value} %0A 📝 Calculate: ${Calculate.value} %0A 📝 Message: ${Messagetext.value}  %0A ✅ Calculate: ${Checkbox.value} `
-    chat_id = -1002128588085
-    token = `6834109969:AAEhUkHL4MsMs8Be2CWGY9oC7KXSbW8JHAM`
-    url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}&parse_mode=html`
+    chat_id = -1002128588085 ,token = `6834109969:AAEhUkHL4MsMs8Be2CWGY9oC7KXSbW8JHAM`,url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}&parse_mode=html`
     let api = new   XMLHttpRequest();
     api.open("GET", url, true);
-    api.send();
-    Username.value = ""
-    Email.value = ""
-    Call.value = ""
-    Calculate.value = ""
-    Messagetext.value = ""
-    Checkbox.value = ""
+    api.send();Username.value = "" ,Email.value = "",Call.value = "",Calculate.value = "",Messagetext.value = "",Checkbox.value = ""
 }  
 Form.addEventListener("submit" , SendMessage )
 
